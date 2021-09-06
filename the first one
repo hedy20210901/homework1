@@ -1,0 +1,39 @@
+let candidate = ["柯文哲","丁守中","姚文智"]
+// console.log('現在參選人有4位，請他們發言：）')
+candidate.push('KAI')
+console.log('現在參選人有',candidate.length,'位，請他們發言：）')
+candidate.forEach((candidate)=>{
+  console.log('你好，我是',candidate,'，請投給我！')
+})
+
+
+現在參選人有 4 位，請他們發言：）
+你好，我是 柯文哲 ，請投給我！
+你好，我是 丁守中 ，請投給我！
+你好，我是 姚文智 ，請投給我！
+你好，我是 KAI ，請投給我！
+
+
+setInterval(function(){
+  let Ran = Math.random()
+  if(Ran<0.2){
+    console.log('5秒一次，中獎拉',Ran)
+  }else{
+    console.log('5秒一次，沒中獎',Ran)
+  }
+},5000)
+
+for(i=0;i<3;i++){
+  let Ran = Math.random()
+  if(Ran<0.2){
+    console.log('for3次，中獎拉',Ran)
+  }else{
+    console.log('for3次，沒中獎',Ran)
+  }
+}
+
+for3次，沒中獎 0.6622366773045529
+for3次，沒中獎 0.48856589323097066
+for3次，沒中獎 0.9295250444843104
+5秒一次，中獎拉 0.162348595171528
+5秒一次，沒中獎 0.23336732377243252
